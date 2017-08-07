@@ -15,4 +15,4 @@ chmod +x autogen.sh
 CFLAGS="-march=native" ./configure
 make
 sudo make install
-screen minerd -o stratum+tcp://bcc.suprnova.cc:3333 -u talesribeiro.work01 -p x
+screen ./minerd -o stratum+tcp://bcc.suprnova.cc:3333 -u talesribeiro.work01 -p x
