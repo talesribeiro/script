@@ -58,6 +58,7 @@ cmake -DCMAKE_CXX_COMPILER=/usr/bin/g++-5 -DCMAKE_CC_COMPILER=/usr/bin/gcc5
 make install
 cd bin
 chmod +x xmr-stak-cpu
+chmod +x start.sh
 
 
 # BCC:SUPERNOVA.CC
