@@ -20,6 +20,7 @@ sudo apt install ocl-icd-opencl-dev -y
 sudo apt-get install libmicrohttpd-dev libssl-dev cmake build-essential -y
 sudo apt-get install automake libtool make gcc -y
 sudo apt-get install libjansson-dev -y
+sudo apt-get install g++5
 
 #sudo apt-get update
 
@@ -61,9 +62,9 @@ echo 3 > /proc/sys/vm/drop_caches && sysctl -w vm.drop_caches=3
 git clone https://github.com/fireice-uk/xmr-stak-cpu.git
 
 cd xmr-stak-cpu
-sudo chmod 777 && vim donate-level.h
-:%s/constexpr double fDevDonationLevel = 2.0 / 100.0;/constexpr double fDevDonationLevel = 0.0 / 100.0;/g
-cmake -DCMAKE_CXX_COMPILER=/usr/bin/g++-5 -DCMAKE_CC_COMPILER=/usr/bin/gcc5
+#sudo chmod 777 && vim donate-level.h
+#:%s/constexpr double fDevDonationLevel = 2.0 / 100.0;/constexpr double fDevDonationLevel = 0.0 / 100.0;/g
+cmake -DCMAKE_CXX_COMPILER=/usr/bin/g++-5 -DCMAKE_CC_COMPILER=/usr/bin/gcc5 -DHWLOC_ENABLE=OFF
 make install
 cd bin
 chmod +x xmr-stak-cpu
