@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt-get install software-properties-common -y && apt-get install git -y && add-apt-repository main && add-apt-repository universe && add-apt-repository restricted && add-apt-repository multiverse && apt-get update -y && apt install ocl-icd-opencl-dev -y && apt-get install libmicrohttpd-dev libssl-dev cmake build-essential -y && apt-get install automake libtool make gcc -y && apt-get install libjansson-dev -y && apt-get update -y && add-apt-repository ppa:ubuntu-toolchain-r/test -y && apt-get update -y && apt-get install g++-5 -y
+apt-get install software-properties-common -y && apt-get install git -y && apt-get install screen -y && add-apt-repository main && add-apt-repository universe && add-apt-repository restricted && add-apt-repository multiverse && apt-get update -y && apt install ocl-icd-opencl-dev -y && apt-get install libmicrohttpd-dev libssl-dev cmake build-essential -y && apt-get install automake libtool make gcc -y && apt-get install libjansson-dev -y && apt-get update -y && add-apt-repository ppa:ubuntu-toolchain-r/test -y && apt-get update -y && apt-get install g++-5 -y
 
 apt-get upgrade -y
 
